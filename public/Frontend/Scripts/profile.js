@@ -1,7 +1,5 @@
 const API_URL = "http://127.0.0.1:3000";
-
 const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
-
 if (!loggedInUser) {
   window.location.href = "login.html";
 } else {

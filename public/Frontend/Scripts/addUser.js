@@ -1,13 +1,10 @@
  document.getElementById("addUserForm").addEventListener("submit", async function (e) {
       e.preventDefault();
-
       const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
       const role = document.getElementById("role").value;
-
       const userData = { name, email, password, role };
-
       try {
         const res = await fetch("http://127.0.0.1:8000/api/users", {
           method: "POST",
